@@ -1,5 +1,5 @@
 import { clientConfig } from '@/lib/server/config'
-export const runtime = 'edge';
+
 export default function handler (req, res) {
   if (req.method === 'GET') {
     res.status(200).json(clientConfig)

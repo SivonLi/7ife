@@ -14,7 +14,7 @@ const Page = ({ postsToShow, page, showNext }) => {
   )
 }
 
-export const runtime = 'edge';
+
 
 export async function getStaticProps (context) {
   const { page } = context.params // Get Current Page No.

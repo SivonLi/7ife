@@ -1,6 +1,6 @@
 import { getAllPosts } from '@/lib/notion'
 import { generateRss } from '@/lib/rss'
-export const runtime = 'edge';
+
 export async function getServerSideProps ({ res }) {
   res.setHeader('Content-Type', 'text/xml')
   const posts = await getAllPosts({ includePages: false })
