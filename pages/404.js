@@ -1,6 +1,8 @@
 import { useLocale } from '@/lib/locale'
 import Container from '@/components/Container'
 
+export const runtime = 'edge';
+
 export default function Page404 () {
   const locale = useLocale()
 

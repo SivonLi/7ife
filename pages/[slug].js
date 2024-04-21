@@ -9,7 +9,7 @@ import { createHash } from 'crypto'
 import Container from '@/components/Container'
 import Post from '@/components/Post'
 import Comments from '@/components/Comments'
-
+export const runtime = 'edge';
 export default function BlogPost ({ post, blockMap, emailHash }) {
   const router = useRouter()
   const BLOG = useConfig()

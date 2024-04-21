@@ -4,7 +4,6 @@ import Container from '@/components/Container'
 import BlogPost from '@/components/BlogPost'
 import Pagination from '@/components/Pagination'
 import { getAllPosts } from '@/lib/notion'
-
 const Page = ({ postsToShow, page, showNext }) => {
   return (
     <Container>
@@ -14,6 +13,8 @@ const Page = ({ postsToShow, page, showNext }) => {
     </Container>
   )
 }
+
+export const runtime = 'edge';
 
 export async function getStaticProps (context) {
   const { page } = context.params // Get Current Page No.
